@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>IPSEC - 2022.1</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white border-gray-200 px-2 sm:px-4 sm:py-2.5 py-5 rounded dark:bg-gray-800 shadow"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="/index.html" class="flex items-center">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >IPsec</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="mobile-menu"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            class="hidden w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul
+            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./introducao.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Introdução</a
+              >
+            </li>
+            <li>
+              <a
+                href="./conceito.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Conceito</a
+              >
+            </li>
+            <li>
+              <a
+                href="./como_funciona.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 bg-blue-700 rounded md:bg-transparent md:text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Como Funciona
+              </a>
+            </li>
+            <li>
+              <a
+                href="./ikev.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >IKE</a
+              >
+            </li>
+            <li>
+              <a
+                href="./aplicacoes.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Aplicações em Segurança</a
+              >
+            </li>
+            <li>
+              <a
+                href="./conclusao.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Conclusão</a
+              >
+            </li>
+            <li>
+              <a
+                href="./perguntas.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Perguntas</a
+              >
+            </li>
+            <li>
+              <a
+                href="./referencias.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Referências</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="m-auto max-w-4xl mt-6"> 
+      <p class="title text-5xl mb-12 md:text-blue-600 font-semibold"> Como funciona </p>
+      
+      <p class="text-2xl"> As conexões IPsec incluem os seguintes passos:</p>
+      <p class="text-lg"> <strong>Troca de chaves:</strong> as chaves são necessárias para criptografia; uma chave é uma sequência de caracteres aleatórios que podem ser usados para "bloquear" (criptografar) e "desbloquear" (descriptografar) mensagens. O IPsec configura chaves com uma troca de chaves entre os dispositivos conectados, para que cada dispositivo possa descriptografar as mensagens do outro dispositivo.</p>
+      <p class="text-lg"> <strong>Cabeçalhos e trailers de pacotes:</strong>  todos os dados que são enviados por uma rede são divididos em pedaços menores chamados pacotes. Os pacotes contém um conteúdo ou os dados reais que estão sendo enviados e cabeçalhos, ou informações sobre esses dados, para que os computadores que recebem os pacotes saibam o que fazer com eles. O IPsec adiciona vários cabeçalhos aos pacotes de dados que contém informações de autenticação e criptografia. O IPsec também adiciona trailers, que seguem após o conteúdo de cada pacote ao invés de seguir antes.</p>
+      <p class="text-lg"> <strong>Autenticação:</strong> O IPsec fornece autenticação para cada pacote, como um selo de autenticidade em um item colecionável. Isso garante que os pacotes sejam de uma fonte confiável e não de um invasor.</p>
+      <p class="text-lg"> <strong>Criptografia:</strong> O IPsec criptografa os conteúdos dentro de cada pacote e o cabeçalho IP de cada pacote (a menos que o modo de transporte seja usado em vez do modo de túnel). Isso mantém os dados enviados por IPsec seguros e privados.</p>
+      <p class="text-lg"> <strong>Transmissão:</strong> os pacotes de IPsec criptografados viajam por uma ou mais redes até seu destino usando um protocolo de transporte. Nesse estágio, o tráfego IPsec difere do tráfego IP regular, pois na maioria das vezes usa UDP como protocolo de transporte, em vez de TCP. O TCP, Protocolo de Controle de Transmissão, configura conexões dedicadas entre dispositivos e garante que todos os pacotes cheguem. O UDP, Protocolo de Datagrama do Usuário, não configura essas conexões dedicadas. O IPsec usa o UDP porque isso permite que os pacotes de IPsec passem pelos firewalls.</p>
+      <p class="text-lg"> <strong>Descriptografia:</strong> na outra extremidade da comunicação, os pacotes são descriptografados e os aplicativos (por exemplo, um navegador) agora podem usar os dados entregues.</p>
+      
+      <p class="text-2xl subheader"> Protocolos usados no IPsec:</p>
+      <p class="text-lg"> <strong>Cabeçalho de Autenticação (AH):</strong> fornece proteção à integridade assim como autenticação da origem dos dados, de controle de acesso e, opcionalmente, proteção a ataque replay. O modo de transporte, usado para proteger comunicações par-a-par (peer-to-peer), protege dados de camadas superiores assim como as partes do cabeçalho IP que não variam de maneira imprevisível durante a entrega do pacote. O modo de túnel pode ser usado para proteger tráfegos gateway-to-gateway ou host-to-gateway, assim como pode ser usado para tráfego host-to-host. Esse tipo de AH protege a parte interna (original) do cabeçalho e dados das camadas superiores assim como as partes do cabeçalho externo (túnel) que não variam de forma imprevisível durante a entrega do pacote. Como partes do cabeçalho IP não estão incluídas nos cálculos do AH, seu processamento é mais complexo que o processamento ESP. AH também não funciona na presença de NAT (Network Address Translation). Para IPsec-v3, AH não é necessário, porém para IPsec-v2 é.</p>
+      <p class="text-lg"> <strong>Protocolo de Encapsulamento de Segurança (ESP):</strong> fornece confidencialidade, integridade, autenticidade, controle de acesso e, opcionalmente, proteção contra ataque de replay e de análise de tráfego. O modo de transporte ESP protege dados das camadas superiores, mas não o cabeçalho IP. O modo de túnel ESP protege os dados de camadas superiores e o cabeçalho interno, mas não o externo.</p>
+      <p class="text-lg"> Assim como o ESP, o AH pode ser utilizado de dois modos: transporte ou túnel. O modo de transporte pode ser aplicado somente para implementações do hospedeiro e fornece proteção para protocolos de camadas superiores, além de campos de cabeçalho IP selecionados (neste modo, para implementações "bump-in-the-stack" ou "bump-in-the-wire", fragmentos IP de entrada ou saída podem exigir a implementação de IPsec para realizar a remontagem/fragmentação de IP extra para estar em conformidade com esta especificação e fornecer suporte IPsec transparente.</p>
+      <p class="text-lg"> No modo de transporte, AH é inserido depois do cabeçalho IP e antes de um protocolo de camada superior, ex.: TCP, UDP, ICMP,... ou antes de qualquer outro cabeçalho IPsec que já foi inserido. No contexto de IPv4 é recomendado colocar AH antes do cabeçalho IP (e todas as opções que contém), mas antes do protocolo de camada superior.</p>
+      <p class="text-lg"> No contexto IPv6, AH é visto como um payload fim-a-fim, então deveria aparecer após os cabeçalhos salto-por-salto, de roteamento e a extensão de fragmentação. Os cabeçalhos de extensão de opções de destino podem aparecer antes ou depois do cabeçalho AH, dependendo da semântica desejada.</p>
+      <p class="text-lg"> O diagrama a seguir ilustra o posicionamento do modo de transporte AH para um pacote IPv4 e IPv6 típicos, de acordo com um cenário de antes e depois.</p>
+      <div class=""> <img src="./assets/ah_antes.png"> </div>
+      <div class=""> <img src="./assets/ah_depois.png"> </div>
+      <p class="text-lg"> Cabeçalhos ESP e AH podem ser combinados em uma variedade de modos.
+        <br>
+        O modo túnel AH pode ser empregado por hospedeiros ou gateways de segurança (implementações "bump-in-the-stack" ou "bump-in-the-wire"). Quando AH é implementado em um gateway de segurança (para proteger o trânsito de tráfego), o modo túnel deve ser usado. No modo túnel, o cabeçalho IP “interno” carrega os endereços finais de origem e destino, enquanto  um cabeçalho IP “externo” pode conter endereços IP distintos, ex.: endereços de gateways de segurança.
+      </p>
+      <div class=""> <img src="./assets/esp_transporte.png"> </div>
+      <div class=""> <img src="./assets/esp_tunel.png"> </div>
+      <p class="text-lg"> <strong>Associação de Segurança (SA):</strong> se refere a vários protocolos usados para negociar chaves e algoritmos de criptografia. Um dos protocolos SA mais comuns é o de Troca de chaves da internet (IKE).
+        <br>
+        Por fim, enquanto o protocolo de internet (IP) não faz parte do pacote IPsec, o IPsec é executado diretamente sobre o IP.
+      </p>
+    </section>
+  </body>
+</html>

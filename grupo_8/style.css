@@ -1,0 +1,29 @@
+p {
+  margin-bottom: 20px;
+}
+section {
+  max-width: 80%;
+  margin: auto;
+}
+section > .title {
+  margin-bottom: 2.25rem;
+  color: #60a5fa;
+}
+section > .subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 2.25rem;
+}
+.subheader{
+  margin: 2.25rem 0;
+}
+.bg-blue-700 {
+  color: #60a5fa;
+}
+.question {
+  color: #6b7280;
+  font-size: 1.5rem;
+}
+.answer {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}

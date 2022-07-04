@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>IPSEC - 2022.1</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white border-gray-200 px-2 sm:px-4 sm:py-2.5 py-5 rounded dark:bg-gray-800 shadow"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="/index.html" class="flex items-center">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >IPsec</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="mobile-menu"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            class="hidden w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul
+            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./introducao.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Introdução</a
+              >
+            </li>
+            <li>
+              <a
+                href="./conceito.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Conceito</a
+              >
+            </li>
+            <li>
+              <a
+                href="./como_funciona.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Como Funciona
+              </a>
+            </li>
+            <li>
+              <a
+                href="./ikev.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >IKE</a
+              >
+            </li>
+            <li>
+              <a
+                href="./aplicacoes.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 bg-blue-700 rounded md:bg-transparent md:text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >Aplicações em Segurança</a
+              >
+            </li>
+            <li>
+              <a
+                href="./conclusao.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Conclusão</a
+              >
+            </li>
+            <li>
+              <a
+                href="./perguntas.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Perguntas</a
+              >
+            </li>
+            <li>
+              <a
+                href="./referencias.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Referências</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="m-auto max-w-4xl mt-6"> 
+      <p class="title text-5xl mb-12 md:text-blue-600 font-semibold"> Aplicações em Segurança </p>
+      <p class="text-lg">Com as Redes Virtuais Privadas (VPN, do inglês Virtual Private Network) é então possível criar túneis que utilizam a rede pública, seja para conectar diferentes unidades organizacionais, compartilhando informações, seja para conectar funcionários em atividades remotas às plataformas corporativas.</p>
+      <p class="text-lg">Uma rede privada virtual (VPN) é uma conexão criptografada entre dois ou mais computadores. As conexões VPN ocorrem em redes públicas, mas os dados trocados pela VPN ainda são privados porque são criptografados.</p>
+      <p class="text-lg">As VPNs possibilitam o acesso seguro e a troca de dados confidenciais em uma infraestrutura de rede compartilhada, como a internet pública. Por exemplo, quando os funcionários trabalham remotamente em vez de no escritório, geralmente usam VPNs para acessar arquivos e aplicativos corporativos.</p>
+      <p class="text-lg">Muitas VPNs usam o conjunto de protocolos IPsec para estabelecer e executar essas conexões criptografadas. No entanto, nem todas as VPNs usam o IPsec. Outro protocolo para VPNs é o SSL/TLS, que opera em uma camada diferente do modelo OSI do IPsec. (O modelo OSI é uma representação abstrata dos processos que fazem a internet funcionar).</p>
+      <p class="text-lg">Os usuários podem acessar uma VPN IPsec fazendo login em um aplicativo de VPN ou "cliente". Isso normalmente exige que o usuário tenha o aplicativo instalado em seu dispositivo.</p>
+      <p class="text-lg">Os logins de VPN geralmente são baseados em senha. Embora os dados enviados por uma VPN sejam criptografados, se as senhas dos usuários forem comprometidas, os invasores poderão fazer login na VPN e roubar esses dados criptografados. Usar autenticação de dois fatores (2FA) pode fortalecer a segurança da VPN IPsec, já que roubar apenas uma senha não dará mais acesso a um invasor.</p>
+      <p class="text-lg">O MSS e a MTU são duas medidas de tamanho de pacote. Os pacotes só podem atingir um determinado tamanho (medido em bytes) antes que computadores, roteadores e switches não consigam lidar com eles. O MSS mede o tamanho do conteúdo de cada pacote, enquanto a MTU mede o pacote inteiro, incluindo os cabeçalhos. Os pacotes que excedem a MTU de uma rede podem ser fragmentados, ou seja, divididos em pacotes menores e depois remontados. Os pacotes que excedem o MSS são simplesmente descartados.</p>
+      <p class="text-lg">Os protocolos IPsec adicionam vários cabeçalhos e trailers aos pacotes, todos os quais ocupam vários bytes. Para redes que usam IPsec, o MSS e a MTU devem ser ajustados de acordo, ou os pacotes serão fragmentados e ficarão ligeiramente atrasados. Normalmente, a MTU de uma rede é de 1.500 bytes. Um cabeçalho IP normal tem 20 bytes e um cabeçalho TCP também tem 20 bytes, o que significa que cada pacote pode conter 1.460 bytes de conteúdo. No entanto, o IPsec adiciona um cabeçalho de autenticação, um cabeçalho ESP e trailers associados. Estes adicionam 50-60 bytes a um pacote, ou mais.</p>
+    </section>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  </body>
+</html>

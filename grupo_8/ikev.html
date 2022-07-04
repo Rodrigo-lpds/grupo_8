@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>IPSEC - 2022.1</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white border-gray-200 px-2 sm:px-4 sm:py-2.5 py-5 rounded dark:bg-gray-800 shadow"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="/index.html" class="flex items-center">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >IPsec</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="mobile-menu"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            class="hidden w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul
+            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./introducao.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Introdução</a
+              >
+            </li>
+            <li>
+              <a
+                href="./conceito.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Conceito</a
+              >
+            </li>
+            <li>
+              <a
+                href="./como_funciona.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Como Funciona
+              </a>
+            </li>
+            <li>
+              <a
+                href="./ikev.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 bg-blue-700 rounded md:bg-transparent md:text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >IKE</a
+              >
+            </li>
+            <li>
+              <a
+                href="./aplicacoes.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Aplicações em Segurança</a
+              >
+            </li>
+            <li>
+              <a
+                href="./conclusao.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Conclusão</a
+              >
+            </li>
+            <li>
+              <a
+                href="./perguntas.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Perguntas</a
+              >
+            </li>
+            <li>
+              <a
+                href="./referencias.html"
+                class="text-base block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Referências</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="m-auto max-w-4xl mt-6"> 
+      <p class="title text-5xl mb-12 md:text-blue-600 font-semibold"> IKE (Internet Key Exchange) </p>
+      
+      <p class="text-lg">O IKE executa autenticação mútua entre duas partes e estabelece uma Associação de Segurança IKE (SA) que inclui informações secretas compartilhadas que podem ser usadas para estabelecer com eficiência SAs para ESP ou AH e um conjunto de algoritmos criptográficos a serem usados ​​pelas SAs para proteger o tráfego que elas transportam. </p>
+      <p class="text-lg">Neste documento, o termo "suite" ou "cryptographic suite" se refere a um conjunto completo de algoritmos usados ​​para proteger uma SA. Um iniciador propõe uma ou mais suites listando algoritmos suportados que podem ser combinados em suites de maneira mista. </p>
+      <p class="text-lg">O IKE também pode negociar o uso de compactação de IP (IPComp) em conexão com um ESP ou AH SA. As SAs para ESP ou AH que são configuradas através daquela IKE SA nós chamamos de "Child SAs".</p>
+      <p class="text-lg">Todas as comunicações IKE consistem em pares de mensagens: uma solicitação e uma resposta. O par é chamado de "troca" e às vezes é chamado de "par de solicitação/resposta". As duas primeiras trocas de mensagens que estabelecem uma IKE SA são chamadas de troca IKE_SA_INIT e troca IKE_AUTH; as trocas IKE subsequentes são chamadas de trocas CREATE_CHILD_SA ou trocas INFORMATIONAL (INFORMATIVA). No caso comum, há uma única troca IKE_SA_INIT e uma única troca IKE_AUTH (um total de quatro mensagens) para estabelecer a IKE SA e a primeira Child SA. Em casos excepcionais, pode haver mais de uma troca. Em todos os casos, todas as trocas IKE_SA_INIT devem ser concluídas antes de qualquer outro tipo de troca, então todas as trocas IKE_AUTH devem ser concluídas e, depois disso, qualquer número de trocas CREATE_CHILD_SA e INFORMATIONAL pode ocorrer em qualquer ordem. Em alguns cenários, apenas uma Child SA é necessária entre os endpoints IPsec e, portanto, não haveria trocas adicionais. As trocas subsequentes podem ser usadas para estabelecer Child SAs adicionais entre o mesmo par de endpoints autenticados e para executar funções de manutenção.</p>
+      <p class="text-lg">Um fluxo de mensagens IKE sempre consiste em uma solicitação seguida por uma resposta. A responsabilidade do solicitante é garantir a confiabilidade. Se a resposta não for recebida dentro de um intervalo de tempo limite, o solicitante precisa retransmitir a solicitação (ou abandonar a conexão).</p>
+      <p class="text-lg">A primeira troca de uma sessão IKE, IKE_SA_INIT, negocia parâmetros de segurança para a IKE SA, envia nonce (“number used once”, número randômico ou semi-randômico gerado para uso específico) e valores Diffie-Hellman.</p>
+      <p class="text-lg">A segunda troca, IKE_AUTH, transmite identidades, comprova o conhecimento dos segredos correspondentes às duas identidades e configura uma SA para a primeira (e geralmente única) AH ou ESP Child SA (a menos que haja falha na configuração da AH ou ESP Child SA, caso a IKE SA ainda esteja estabelecida sem a Child SA).</p>
+      <p class="text-lg">Os tipos de trocas subsequentes são CREATE_CHILD_SA (que cria uma Child SA) e INFORMATIONAL (que exclui uma SA, relata condições de erro ou faz outras tarefas domésticas, “housekeeping”). Toda solicitação requer uma resposta. Uma solicitação INFORMATIONAL sem cargas úteis (além da carga útil criptografada vazia exigida pela sintaxe) é comumente usada como uma verificação de atividade/existência. Essas trocas subsequentes não podem ser usadas até que as trocas iniciais sejam concluídas.</p>
+      <div class=""> <img src="./assets/gateway_to_gateway.png"> </div>
+      <p class="text-lg text-center"> Figura 1: Túnel de Gateway de Segurança para Gateway de Segurança </p>
+      <p class="text-lg"> Nesse cenário, nenhum endpoint da conexão IP implementa o IPsec, mas os nós de rede entre eles protegem o tráfego em parte do caminho. A proteção é transparente para os endpoints e depende do roteamento comum para enviar pacotes pelos terminais do túnel para processamento. Cada endpoint anunciaria o conjunto de endereços "atrás" dele e os pacotes seriam enviados no modo de túnel, onde o cabeçalho IP interno conteria os endereços IP dos endpoints reais.</p>
+      <div class="flex justify-center"> <img src="./assets/endpoint_to_endpoint.gif"> </div>
+      <p class="text-lg text-center"> Figura 2: Endpoint-to-Endpoint </p>
+      <p class="text-lg"> Nessa circunstância, ambos os terminais da conexão IP implementam o IPsec, conforme exigido dos hosts em [IPSECARCH]. O modo de transporte geralmente será comumente usado sem cabeçalho IP interno. Um único par de endereços será negociado para que os pacotes sejam protegidos por este SA. Esses endpoints podem implementar controles de acesso de camada de aplicação com base nas identidades autenticadas por IPsec dos participantes. Este cenário permite a segurança fim-a-fim que tem sido um princípio orientador para a Internet desde [ARCHPRINC], [TRANSPARENCY], e um método para limitar os problemas inerentes à complexidade nas redes observados por [ARCHGUIDEPHIL]. Embora esse cenário possa não ser totalmente aplicável à Internet IPv4, ele foi implantado com êxito em cenários específicos em intranets usando IKEv1. </p>
+      <p class="text-lg"> Deve ser mais amplamente habilitado durante a transição para IPv6 e com a adoção de IKEv2. </p>
+      <p class="text-lg"> Assim, é possível que um ou ambos os endpoints protegidos estejam atrás de um nó de tradução de endereço de rede (NAT), caso em que os pacotes encapsulados terão que ser encapsulados em UDP para que os números de porta nos cabeçalhos UDP possam ser usados ​​para identificar endpoints individuais "atrás" do NAT. </p>
+      <div class="flex justify-center"> <img src="./assets/gateway_to_endpoint.png"> </div>
+      <p class="text-lg text-center">  Figura 3: Túnel Endpoint para Gateway de Segurança </p>
+      <p class="text-lg"> Nesse contexto, um endpoint protegido (normalmente um notebook) se conecta de volta à sua rede corporativa por meio de um túnel protegido por IPsec. Ele pode usar esse túnel apenas para acessar informações na rede corporativa ou pode encapsular todo o seu tráfego de volta pela rede corporativa para aproveitar a proteção fornecida por um firewall corporativo contra ataques baseados na Internet. Em ambos os casos, o endpoint protegido deseja um endereço IP associado ao gateway de segurança para que os pacotes retornados a ele sejam direcionados ao gateway de segurança e possam ser tunelados de volta. Esse endereço IP pode ser estático ou pode ser alocado dinamicamente pelo gateway de segurança. Em apoio ao último caso, o IKEv2 inclui um mecanismo (ou seja, cargas úteis de configuração) para o iniciador solicitar um endereço IP de propriedade do gateway de segurança para uso durante sua SA.</p>
+      <p class="text-lg"> Nessa situação, os pacotes usarão o modo de túnel (tunelamento). Em cada pacote do endpoint protegido o cabeçalho IP externo conterá o endereço IP de origem associado à sua localização atual (ou seja, o endereço que receberá o tráfego roteado diretamente para o endpoint), enquanto o cabeçalho IP interno conterá o endereço IP de origem atribuído pelo gateway de segurança (ou seja, o endereço que fará com que o tráfego seja roteado para o gateway de segurança para encaminhamento ao endpoint). O endereço de destino externo sempre será o do gateway de segurança, enquanto o endereço de destino interno será o destino final do pacote. </p>
+      <p class="text-lg"> Nesse caso é possível que o endpoint protegido esteja atrás de um NAT. Dessa maneira, o endereço IP visto pelo gateway de segurança não será o mesmo que o endereço IP enviado pelo endpoint protegido e os pacotes precisam ser encapsulados em UDP para serem roteados corretamente. </p>
+    </section>
+  </body>
+</html>

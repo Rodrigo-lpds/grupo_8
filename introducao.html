@@ -130,10 +130,10 @@
     <section class="m-auto max-w-4xl mt-6"> 
       <p class="title text-5xl mb-12 md:text-blue-600 font-semibold"> Introdução </p>
       <p class="text-lg">IPsec (Internet Protocol Security) é um conjunto de protocolos que provê segurança para comunicações via Internet na camada IP. Sua atribuição mais comum é proporcionar VPN (Virtual Private Network), seja entre dois lugares (gateway-to-gateway) ou entre um usuário remoto e uma rede empresarial (host-to-gateway). Também pode proporcionar segurança end-to-end (fim-a-fim) ou host-to-host (hospedeiro-a-hospedeiro). IPsec também é usado por outros protocolos da Internet (ex.: Mobile IP version 6 (MIPv6)) para proteger parte ou todo seu tráfego. 
-         IKE (Internet Key Exchange) é a protocolo-chave de negociação e gerenciamento que é mais comumente utilizado para fornecer material de chaveamento dinamicamente negociado e atualizado para IPsec.
+         IKE (Internet Key Exchange) é o protocolo-chave de negociação e gerenciamento que é mais comumente utilizado para fornecer material de chaveamento dinamicamente negociado e atualizado para IPsec.
       </p>
-      <p class="text-2xl">Modo de túnel e Modo de transporte </p>
-      <p class="text-lg">O IPsec pode ser implementado de dois modos: Modo de túnel e no modo de Transporte</p>
+      <p class="text-2xl">Modo de Túnel e Modo de Transporte </p>
+      <p class="text-lg">O IPsec pode ser implementado de dois modos: Modo de Túnel e no Modo de Transporte</p>
       <p class="text-lg">O modo de túnel IPsec é usado entre dois roteadores dedicados, com cada roteador atuando como uma extremidade de um "túnel" virtual por meio de uma rede pública. No modo de túnel IPsec, o cabeçalho IP original que contém o destino final do pacote é criptografado, além do conteúdo do pacote. Para informar aos roteadores intermediários para onde encaminhar os pacotes, o IPsec adiciona um novo cabeçalho IP. Em cada extremidade do túnel, os roteadores descriptografam os cabeçalhos IP para entregar os pacotes aos seus destinos.</p>
       <p class="text-lg">No modo de transporte, o conteúdo de cada pacote é criptografado, mas o cabeçalho IP original não. Roteadores intermediários são, portanto, capazes de visualizar o destino final de cada pacote — a menos que um protocolo de encapsulamento separado (como o GRE) seja usado.</p>
     </section>
